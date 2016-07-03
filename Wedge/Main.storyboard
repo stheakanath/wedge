@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hpG-41-ldr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,13 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dls-Qh-uva">
-                                <rect key="frame" x="252" y="116" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-YI-RcT">
-                                <rect key="frame" x="252" y="171" width="97" height="30"/>
+                                <rect key="frame" x="192" y="171" width="216" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -32,10 +27,15 @@
                                 <rect key="frame" x="245" y="232" width="111" height="30"/>
                                 <state key="normal" title="LOG IN"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyM-pk-o26">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyM-pk-o26">
                                 <rect key="frame" x="210" y="507" width="180" height="30"/>
                                 <state key="normal" title="FORGOT PASSWORD?"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dls-Qh-uva">
+                                <rect key="frame" x="192" y="115" width="216" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -43,6 +43,7 @@
                             <constraint firstItem="HeT-pk-4Gl" firstAttribute="centerX" secondItem="Xwp-jZ-0IA" secondAttribute="centerX" id="GaA-hz-G9A"/>
                             <constraint firstItem="wbe-YI-RcT" firstAttribute="centerX" secondItem="Xwp-jZ-0IA" secondAttribute="centerX" id="HXB-Z8-nI9"/>
                             <constraint firstItem="tyM-pk-o26" firstAttribute="centerX" secondItem="Xwp-jZ-0IA" secondAttribute="centerX" id="ThM-JD-WO2"/>
+                            <constraint firstItem="UYP-f2-PK9" firstAttribute="top" secondItem="tyM-pk-o26" secondAttribute="bottom" constant="63" id="ZYt-Zk-JDx"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -62,29 +63,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-QI-N1O">
-                                <rect key="frame" x="182" y="500" width="234" height="30"/>
-                                <state key="normal" title="SIGN UP WITH FACEBOOK"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azV-gx-dUe">
-                                <rect key="frame" x="183" y="532" width="234" height="30"/>
+                                <rect key="frame" x="183" y="521" width="234" height="30"/>
                                 <state key="normal" title="LOG IN"/>
                                 <connections>
-                                    <segue destination="sL9-vZ-eNV" kind="showDetail" id="eFA-MT-bU5"/>
+                                    <action selector="btnFBLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jma-49-fVh"/>
+                                    <segue destination="sL9-vZ-eNV" kind="presentation" id="Aoq-J2-ws6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" ambiguous="YES" misplaced="YES" image="LogoVibeTest" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-YI-GqQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" misplaced="YES" image="LogoVibeTest" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-YI-GqQ">
                                 <rect key="frame" x="216" y="95" width="167" height="168"/>
                                 <edgeInsets key="layoutMargins" top="40" left="40" bottom="40" right="40"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-QI-N1O">
+                                <rect key="frame" x="183" y="467" width="234" height="30"/>
+                                <state key="normal" title="SIGN UP WITH FACEBOOK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="azV-gx-dUe" secondAttribute="bottom" constant="38" id="AcJ-dg-8TB"/>
+                            <constraint firstItem="nAt-YI-GqQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="KnH-IQ-E44"/>
+                            <constraint firstItem="azV-gx-dUe" firstAttribute="top" secondItem="wbw-QI-N1O" secondAttribute="bottom" constant="24" id="Ok9-4Z-262"/>
                             <constraint firstItem="wbw-QI-N1O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Waq-ua-wDv"/>
                             <constraint firstItem="azV-gx-dUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d3q-nq-w0D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="azV-gx-dUe" secondAttribute="bottom" constant="49" id="mja-td-eCm"/>
                             <constraint firstItem="nAt-YI-GqQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXF-gB-2I5"/>
-                            <constraint firstItem="azV-gx-dUe" firstAttribute="top" secondItem="wbw-QI-N1O" secondAttribute="bottom" constant="2" id="tv7-tg-DeN"/>
                         </constraints>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
@@ -176,6 +179,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LogoVibeTest" width="558" height="610"/>
+        <image name="LogoVibeTest" width="279" height="305"/>
     </resources>
 </document>

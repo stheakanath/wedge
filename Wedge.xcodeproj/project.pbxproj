@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0DB2449C1D29900D0059C96F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2449B1D29900D0059C96F /* Login.swift */; };
+		0DB244B11D29B8190059C96F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */; };
+		0DB244B21D29B8190059C96F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */; };
+		0DB244B31D29B8190059C96F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */; };
+		0DB244B41D29B8190059C96F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */; };
 		EB5825251D2981D900BCEFD6 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */; };
 		EB5825271D29827400BCEFD6 /* NewsfeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825261D29827400BCEFD6 /* NewsfeedData.swift */; };
 		EB58252B1D2984C800BCEFD6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */; };
@@ -43,6 +47,10 @@
 
 /* Begin PBXFileReference section */
 		0DB2449B1D29900D0059C96F /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = Frameworks/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
 		EB5825261D29827400BCEFD6 /* NewsfeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedData.swift; sourceTree = "<group>"; };
 		EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB244B21D29B8190059C96F /* FBSDKMessengerShareKit.framework in Frameworks */,
+				0DB244B41D29B8190059C96F /* FBSDKCoreKit.framework in Frameworks */,
+				0DB244B11D29B8190059C96F /* FBSDKShareKit.framework in Frameworks */,
+				0DB244B31D29B8190059C96F /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +105,10 @@
 		EBF604101D297E7800F43072 = {
 			isa = PBXGroup;
 			children = (
+				0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */,
+				0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */,
+				0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */,
+				0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */,
 				EB5825DC1D298F4300BCEFD6 /* UNIRest */,
 				EBF6041B1D297E7800F43072 /* Wedge */,
 				EBF604301D297E7800F43072 /* WedgeTests */,
@@ -425,6 +441,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Wedge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.Wedge;
@@ -437,6 +457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Wedge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.Wedge;
