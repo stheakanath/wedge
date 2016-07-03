@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBF6041D1D297E7800F43072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6041C1D297E7800F43072 /* AppDelegate.swift */; };
+		EBF6041F1D297E7800F43072 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6041E1D297E7800F43072 /* ViewController.swift */; };
+		EBF604241D297E7800F43072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF604231D297E7800F43072 /* Assets.xcassets */; };
+		EBF604271D297E7800F43072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF604251D297E7800F43072 /* LaunchScreen.storyboard */; };
+		EBF604321D297E7800F43072 /* WedgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF604311D297E7800F43072 /* WedgeTests.swift */; };
+		EBF6043D1D297E7800F43072 /* WedgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6043C1D297E7800F43072 /* WedgeUITests.swift */; };
+		EBF6044B1D297E8800F43072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF6044A1D297E8800F43072 /* Main.storyboard */; };
+		EBF6044D1D297E9800F43072 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6044C1D297E9800F43072 /* FeedItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBF6042E1D297E7800F43072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF604111D297E7800F43072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF604181D297E7800F43072;
+			remoteInfo = Wedge;
+		};
+		EBF604391D297E7800F43072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF604111D297E7800F43072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF604181D297E7800F43072;
+			remoteInfo = Wedge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBF604191D297E7800F43072 /* Wedge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wedge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF6041C1D297E7800F43072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBF6041E1D297E7800F43072 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBF604231D297E7800F43072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBF604261D297E7800F43072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBF604281D297E7800F43072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF6042D1D297E7800F43072 /* WedgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WedgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF604311D297E7800F43072 /* WedgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WedgeTests.swift; sourceTree = "<group>"; };
+		EBF604331D297E7800F43072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF604381D297E7800F43072 /* WedgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WedgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF6043C1D297E7800F43072 /* WedgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WedgeUITests.swift; sourceTree = "<group>"; };
+		EBF6043E1D297E7800F43072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF6044A1D297E8800F43072 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EBF6044C1D297E9800F43072 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBF604161D297E7800F43072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF6042A1D297E7800F43072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF604351D297E7800F43072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBF604101D297E7800F43072 = {
+			isa = PBXGroup;
+			children = (
+				EBF6041B1D297E7800F43072 /* Wedge */,
+				EBF604301D297E7800F43072 /* WedgeTests */,
+				EBF6043B1D297E7800F43072 /* WedgeUITests */,
+				EBF6041A1D297E7800F43072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF6041A1D297E7800F43072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF604191D297E7800F43072 /* Wedge.app */,
+				EBF6042D1D297E7800F43072 /* WedgeTests.xctest */,
+				EBF604381D297E7800F43072 /* WedgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF6041B1D297E7800F43072 /* Wedge */ = {
+			isa = PBXGroup;
+			children = (
+				EBF6041C1D297E7800F43072 /* AppDelegate.swift */,
+				EBF6041E1D297E7800F43072 /* ViewController.swift */,
+				EBF6044C1D297E9800F43072 /* FeedItem.swift */,
+				EBF6044A1D297E8800F43072 /* Main.storyboard */,
+				EBF604231D297E7800F43072 /* Assets.xcassets */,
+				EBF604251D297E7800F43072 /* LaunchScreen.storyboard */,
+				EBF604281D297E7800F43072 /* Info.plist */,
+			);
+			path = Wedge;
+			sourceTree = "<group>";
+		};
+		EBF604301D297E7800F43072 /* WedgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF604311D297E7800F43072 /* WedgeTests.swift */,
+				EBF604331D297E7800F43072 /* Info.plist */,
+			);
+			path = WedgeTests;
+			sourceTree = "<group>";
+		};
+		EBF6043B1D297E7800F43072 /* WedgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF6043C1D297E7800F43072 /* WedgeUITests.swift */,
+				EBF6043E1D297E7800F43072 /* Info.plist */,
+			);
+			path = WedgeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBF604181D297E7800F43072 /* Wedge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF604411D297E7800F43072 /* Build configuration list for PBXNativeTarget "Wedge" */;
+			buildPhases = (
+				EBF604151D297E7800F43072 /* Sources */,
+				EBF604161D297E7800F43072 /* Frameworks */,
+				EBF604171D297E7800F43072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wedge;
+			productName = Wedge;
+			productReference = EBF604191D297E7800F43072 /* Wedge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBF6042C1D297E7800F43072 /* WedgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF604441D297E7800F43072 /* Build configuration list for PBXNativeTarget "WedgeTests" */;
+			buildPhases = (
+				EBF604291D297E7800F43072 /* Sources */,
+				EBF6042A1D297E7800F43072 /* Frameworks */,
+				EBF6042B1D297E7800F43072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF6042F1D297E7800F43072 /* PBXTargetDependency */,
+			);
+			name = WedgeTests;
+			productName = WedgeTests;
+			productReference = EBF6042D1D297E7800F43072 /* WedgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBF604371D297E7800F43072 /* WedgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF604471D297E7800F43072 /* Build configuration list for PBXNativeTarget "WedgeUITests" */;
+			buildPhases = (
+				EBF604341D297E7800F43072 /* Sources */,
+				EBF604351D297E7800F43072 /* Frameworks */,
+				EBF604361D297E7800F43072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF6043A1D297E7800F43072 /* PBXTargetDependency */,
+			);
+			name = WedgeUITests;
+			productName = WedgeUITests;
+			productReference = EBF604381D297E7800F43072 /* WedgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBF604111D297E7800F43072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kuriakose Sony Theakanath";
+				TargetAttributes = {
+					EBF604181D297E7800F43072 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EBF6042C1D297E7800F43072 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EBF604181D297E7800F43072;
+					};
+					EBF604371D297E7800F43072 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EBF604181D297E7800F43072;
+					};
+				};
+			};
+			buildConfigurationList = EBF604141D297E7800F43072 /* Build configuration list for PBXProject "Wedge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBF604101D297E7800F43072;
+			productRefGroup = EBF6041A1D297E7800F43072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF604181D297E7800F43072 /* Wedge */,
+				EBF6042C1D297E7800F43072 /* WedgeTests */,
+				EBF604371D297E7800F43072 /* WedgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBF604171D297E7800F43072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF604271D297E7800F43072 /* LaunchScreen.storyboard in Resources */,
+				EBF604241D297E7800F43072 /* Assets.xcassets in Resources */,
+				EBF6044B1D297E8800F43072 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF6042B1D297E7800F43072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF604361D297E7800F43072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBF604151D297E7800F43072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF6041F1D297E7800F43072 /* ViewController.swift in Sources */,
+				EBF6041D1D297E7800F43072 /* AppDelegate.swift in Sources */,
+				EBF6044D1D297E9800F43072 /* FeedItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF604291D297E7800F43072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF604321D297E7800F43072 /* WedgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF604341D297E7800F43072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF6043D1D297E7800F43072 /* WedgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBF6042F1D297E7800F43072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF604181D297E7800F43072 /* Wedge */;
+			targetProxy = EBF6042E1D297E7800F43072 /* PBXContainerItemProxy */;
+		};
+		EBF6043A1D297E7800F43072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF604181D297E7800F43072 /* Wedge */;
+			targetProxy = EBF604391D297E7800F43072 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBF604251D297E7800F43072 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF604261D297E7800F43072 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBF6043F1D297E7800F43072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBF604401D297E7800F43072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBF604421D297E7800F43072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wedge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.Wedge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBF604431D297E7800F43072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wedge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.Wedge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBF604451D297E7800F43072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WedgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.WedgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wedge.app/Wedge";
+			};
+			name = Debug;
+		};
+		EBF604461D297E7800F43072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WedgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.WedgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wedge.app/Wedge";
+			};
+			name = Release;
+		};
+		EBF604481D297E7800F43072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WedgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.WedgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wedge;
+			};
+			name = Debug;
+		};
+		EBF604491D297E7800F43072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WedgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.WedgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wedge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBF604141D297E7800F43072 /* Build configuration list for PBXProject "Wedge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF6043F1D297E7800F43072 /* Debug */,
+				EBF604401D297E7800F43072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF604411D297E7800F43072 /* Build configuration list for PBXNativeTarget "Wedge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF604421D297E7800F43072 /* Debug */,
+				EBF604431D297E7800F43072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBF604441D297E7800F43072 /* Build configuration list for PBXNativeTarget "WedgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF604451D297E7800F43072 /* Debug */,
+				EBF604461D297E7800F43072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBF604471D297E7800F43072 /* Build configuration list for PBXNativeTarget "WedgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF604481D297E7800F43072 /* Debug */,
+				EBF604491D297E7800F43072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBF604111D297E7800F43072 /* Project object */;
+}
