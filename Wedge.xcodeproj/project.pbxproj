@@ -13,11 +13,11 @@
 		0DB244B31D29B8190059C96F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */; };
 		0DB244B41D29B8190059C96F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */; };
 		EB5825251D2981D900BCEFD6 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */; };
-		EB5825271D29827400BCEFD6 /* NewsfeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825261D29827400BCEFD6 /* NewsfeedData.swift */; };
+		EB5825271D29827400BCEFD6 /* NFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825261D29827400BCEFD6 /* NFData.swift */; };
 		EB58252B1D2984C800BCEFD6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */; };
 		EB58252E1D298C5D00BCEFD6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58252D1D298C5D00BCEFD6 /* Request.swift */; };
 		EBF6041D1D297E7800F43072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6041C1D297E7800F43072 /* AppDelegate.swift */; };
-		EBF6041F1D297E7800F43072 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6041E1D297E7800F43072 /* ViewController.swift */; };
+		EBF6041F1D297E7800F43072 /* LIIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6041E1D297E7800F43072 /* LIIntroView.swift */; };
 		EBF604241D297E7800F43072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF604231D297E7800F43072 /* Assets.xcassets */; };
 		EBF604271D297E7800F43072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF604251D297E7800F43072 /* LaunchScreen.storyboard */; };
 		EBF604321D297E7800F43072 /* WedgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF604311D297E7800F43072 /* WedgeTests.swift */; };
@@ -50,13 +50,13 @@
 		0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
-		EB5825261D29827400BCEFD6 /* NewsfeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedData.swift; sourceTree = "<group>"; };
+		EB5825261D29827400BCEFD6 /* NFData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFData.swift; sourceTree = "<group>"; };
 		EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		EB58252D1D298C5D00BCEFD6 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		EB5825DE1D298F6200BCEFD6 /* Wedge-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Wedge-Bridging-Header.h"; sourceTree = "<group>"; };
 		EBF604191D297E7800F43072 /* Wedge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wedge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF6041C1D297E7800F43072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBF6041E1D297E7800F43072 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBF6041E1D297E7800F43072 /* LIIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIIntroView.swift; sourceTree = "<group>"; };
 		EBF604231D297E7800F43072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBF604261D297E7800F43072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF604281D297E7800F43072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 				EB5825E01D29BC8600BCEFD6 /* Frameworks */,
 				EB5825DE1D298F6200BCEFD6 /* Wedge-Bridging-Header.h */,
 				EBF6041C1D297E7800F43072 /* AppDelegate.swift */,
-				EBF6041E1D297E7800F43072 /* ViewController.swift */,
-				EB5825261D29827400BCEFD6 /* NewsfeedData.swift */,
+				EBF6041E1D297E7800F43072 /* LIIntroView.swift */,
+				EB5825261D29827400BCEFD6 /* NFData.swift */,
 				EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */,
 				EBF6044C1D297E9800F43072 /* FeedItem.swift */,
 				0DB2449B1D29900D0059C96F /* Login.swift */,
@@ -300,8 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF6041F1D297E7800F43072 /* ViewController.swift in Sources */,
-				EB5825271D29827400BCEFD6 /* NewsfeedData.swift in Sources */,
+				EBF6041F1D297E7800F43072 /* LIIntroView.swift in Sources */,
+				EB5825271D29827400BCEFD6 /* NFData.swift in Sources */,
 				0DB2449C1D29900D0059C96F /* Login.swift in Sources */,
 				EBF6041D1D297E7800F43072 /* AppDelegate.swift in Sources */,
 				EB58252B1D2984C800BCEFD6 /* SwiftyJSON.swift in Sources */,

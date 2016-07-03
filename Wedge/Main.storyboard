@@ -6,55 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="T5C-QN-If7">
-            <objects>
-                <viewController id="sL9-vZ-eNV" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XIC-7v-WTq"/>
-                        <viewControllerLayoutGuide type="bottom" id="UYP-f2-PK9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Xwp-jZ-0IA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-YI-RcT">
-                                <rect key="frame" x="192" y="171" width="216" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeT-pk-4Gl">
-                                <rect key="frame" x="245" y="232" width="111" height="30"/>
-                                <state key="normal" title="LOG IN"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyM-pk-o26">
-                                <rect key="frame" x="210" y="507" width="180" height="30"/>
-                                <state key="normal" title="FORGOT PASSWORD?"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dls-Qh-uva">
-                                <rect key="frame" x="192" y="115" width="216" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="dls-Qh-uva" firstAttribute="centerX" secondItem="Xwp-jZ-0IA" secondAttribute="centerX" id="9ch-cL-3H3"/>
-                            <constraint firstItem="HeT-pk-4Gl" firstAttribute="centerX" secondItem="Xwp-jZ-0IA" secondAttribute="centerX" id="GaA-hz-G9A"/>
-                            <constraint firstItem="wbe-YI-RcT" firstAttribute="centerX" secondItem="Xwp-jZ-0IA" secondAttribute="centerX" id="HXB-Z8-nI9"/>
-                            <constraint firstItem="tyM-pk-o26" firstAttribute="centerX" secondItem="Xwp-jZ-0IA" secondAttribute="centerX" id="ThM-JD-WO2"/>
-                            <constraint firstItem="UYP-f2-PK9" firstAttribute="top" secondItem="tyM-pk-o26" secondAttribute="bottom" constant="63" id="ZYt-Zk-JDx"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C1Q-es-b36" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="446" y="1069"/>
-        </scene>
-        <!--View Controller-->
+        <!--Intro View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wedge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LIIntroView" customModule="Wedge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -63,30 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azV-gx-dUe">
-                                <rect key="frame" x="183" y="521" width="234" height="30"/>
-                                <state key="normal" title="LOG IN"/>
-                                <connections>
-                                    <action selector="btnFBLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jma-49-fVh"/>
-                                    <segue destination="sL9-vZ-eNV" kind="presentation" id="Aoq-J2-ws6"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" misplaced="YES" image="LogoVibeTest" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-YI-GqQ">
                                 <rect key="frame" x="216" y="95" width="167" height="168"/>
                                 <edgeInsets key="layoutMargins" top="40" left="40" bottom="40" right="40"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-QI-N1O">
-                                <rect key="frame" x="183" y="467" width="234" height="30"/>
-                                <state key="normal" title="SIGN UP WITH FACEBOOK"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azV-gx-dUe">
+                                <rect key="frame" x="0.0" y="554" width="600" height="47"/>
+                                <color key="backgroundColor" red="0.079753355752305174" green="0.70547693062827221" blue="0.61806918630804397" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFBLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jma-49-fVh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="azV-gx-dUe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Dfv-4i-s64"/>
                             <constraint firstItem="nAt-YI-GqQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="KnH-IQ-E44"/>
-                            <constraint firstItem="azV-gx-dUe" firstAttribute="top" secondItem="wbw-QI-N1O" secondAttribute="bottom" constant="24" id="Ok9-4Z-262"/>
-                            <constraint firstItem="wbw-QI-N1O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Waq-ua-wDv"/>
-                            <constraint firstItem="azV-gx-dUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d3q-nq-w0D"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="azV-gx-dUe" secondAttribute="bottom" constant="49" id="mja-td-eCm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="azV-gx-dUe" secondAttribute="bottom" id="XJq-v0-4Ox"/>
                             <constraint firstItem="nAt-YI-GqQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXF-gB-2I5"/>
                         </constraints>
                         <variation key="heightClass=compact">
@@ -103,7 +54,7 @@
         <!--Newsfeed View Controller-->
         <scene sceneID="VRQ-WO-9n6">
             <objects>
-                <tableViewController id="hpG-41-ldr" customClass="NewsfeedViewController" customModule="Wedge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="mm" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hpG-41-ldr" customClass="NewsfeedViewController" customModule="Wedge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="183" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gzk-0g-a4j">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

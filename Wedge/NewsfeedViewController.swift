@@ -13,6 +13,7 @@ class NewsfeedViewController: UITableViewController {
     var imageData = [UIImage?](count: 20, repeatedValue: nil)
     
     override func viewWillAppear(animated: Bool) {
+        print("hello")
         self.data = JSON(data: Request().getNewsfeed())["results"]
     }
     
@@ -25,8 +26,8 @@ class NewsfeedViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCellWithIdentifier("feedItem", forIndexPath: indexPath) as! FeedItem
-        
         cell.eventName.text = self.data[indexPath.row]["name"].stringValue
         cell.eventPrice.text = "$90"
         cell.eventLocation.text = self.data[indexPath.row]["_embedded"]["venues"][0]["city"]["name"].stringValue
@@ -34,9 +35,12 @@ class NewsfeedViewController: UITableViewController {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
                 let data = NSData(contentsOfURL: NSURL(string: self.data[indexPath.row]["images"][2]["url"].stringValue)!)
                 dispatch_async(dispatch_get_main_queue(), {
-                    cell.eventPicture.image = UIImage(data: data!)
-                    cell.eventPicture.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, 93)
-                    self.imageData[indexPath.row] = cell.eventPicture.image
+                    if (data != nil) {
+                        cell.eventPicture.image = UIImage(data: data!)
+                        cell.eventPicture.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, 93)
+                        self.imageData[indexPath.row] = cell.eventPicture.image
+
+                    }
 
                 });
             }
