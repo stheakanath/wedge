@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hpG-41-ldr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -100,6 +100,7 @@
                                     <constraint firstAttribute="width" secondItem="C18-Ry-rkq" secondAttribute="width" id="z6A-HT-VVt"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="eventDate" destination="C18-Ry-rkq" id="yuD-HU-hxb"/>
                                     <outlet property="eventLocation" destination="RbZ-Vy-L1r" id="T2k-SH-kXx"/>
                                     <outlet property="eventName" destination="Sna-6H-933" id="4D4-Cr-t42"/>
                                     <outlet property="eventPicture" destination="qqh-28-gU0" id="rlw-nn-chO"/>
