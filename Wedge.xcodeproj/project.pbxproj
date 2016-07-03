@@ -16,8 +16,6 @@
 		EB5825271D29827400BCEFD6 /* NewsfeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825261D29827400BCEFD6 /* NewsfeedData.swift */; };
 		EB58252B1D2984C800BCEFD6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */; };
 		EB58252E1D298C5D00BCEFD6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58252D1D298C5D00BCEFD6 /* Request.swift */; };
-		EB5825DD1D298F4300BCEFD6 /* UNIRest in Resources */ = {isa = PBXBuildFile; fileRef = EB5825DC1D298F4300BCEFD6 /* UNIRest */; };
-		EB5825DF1D298FC300BCEFD6 /* UNIRest in Sources */ = {isa = PBXBuildFile; fileRef = EB5825DC1D298F4300BCEFD6 /* UNIRest */; };
 		EBF6041D1D297E7800F43072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6041C1D297E7800F43072 /* AppDelegate.swift */; };
 		EBF6041F1D297E7800F43072 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6041E1D297E7800F43072 /* ViewController.swift */; };
 		EBF604241D297E7800F43072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF604231D297E7800F43072 /* Assets.xcassets */; };
@@ -47,15 +45,14 @@
 
 /* Begin PBXFileReference section */
 		0DB2449B1D29900D0059C96F /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = Frameworks/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../Frameworks/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
 		EB5825261D29827400BCEFD6 /* NewsfeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedData.swift; sourceTree = "<group>"; };
 		EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		EB58252D1D298C5D00BCEFD6 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		EB5825DC1D298F4300BCEFD6 /* UNIRest */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UNIRest; path = Frameworks/UNIRest; sourceTree = "<group>"; };
 		EB5825DE1D298F6200BCEFD6 /* Wedge-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Wedge-Bridging-Header.h"; sourceTree = "<group>"; };
 		EBF604191D297E7800F43072 /* Wedge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wedge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF6041C1D297E7800F43072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,14 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EBF604101D297E7800F43072 = {
+		EB5825E01D29BC8600BCEFD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */,
 				0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */,
 				0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */,
 				0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */,
 				0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */,
-				EB5825DC1D298F4300BCEFD6 /* UNIRest */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBF604101D297E7800F43072 = {
+			isa = PBXGroup;
+			children = (
 				EBF6041B1D297E7800F43072 /* Wedge */,
 				EBF604301D297E7800F43072 /* WedgeTests */,
 				EBF6043B1D297E7800F43072 /* WedgeUITests */,
@@ -130,6 +134,7 @@
 		EBF6041B1D297E7800F43072 /* Wedge */ = {
 			isa = PBXGroup;
 			children = (
+				EB5825E01D29BC8600BCEFD6 /* Frameworks */,
 				EB5825DE1D298F6200BCEFD6 /* Wedge-Bridging-Header.h */,
 				EBF6041C1D297E7800F43072 /* AppDelegate.swift */,
 				EBF6041E1D297E7800F43072 /* ViewController.swift */,
@@ -137,7 +142,6 @@
 				EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */,
 				EBF6044C1D297E9800F43072 /* FeedItem.swift */,
 				0DB2449B1D29900D0059C96F /* Login.swift */,
-				EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */,
 				EB58252D1D298C5D00BCEFD6 /* Request.swift */,
 				EBF6044A1D297E8800F43072 /* Main.storyboard */,
 				EBF604231D297E7800F43072 /* Assets.xcassets */,
@@ -270,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF604271D297E7800F43072 /* LaunchScreen.storyboard in Resources */,
-				EB5825DD1D298F4300BCEFD6 /* UNIRest in Resources */,
 				EBF604241D297E7800F43072 /* Assets.xcassets in Resources */,
 				EBF6044B1D297E8800F43072 /* Main.storyboard in Resources */,
 			);
@@ -297,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB5825DF1D298FC300BCEFD6 /* UNIRest in Sources */,
 				EBF6041F1D297E7800F43072 /* ViewController.swift in Sources */,
 				EB5825271D29827400BCEFD6 /* NewsfeedData.swift in Sources */,
 				0DB2449C1D29900D0059C96F /* Login.swift in Sources */,
