@@ -12,8 +12,7 @@ class FeedItem: UITableViewCell {
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var eventPicture: UIImageView!
     @IBOutlet weak var eventPrice: UILabel!
-    @IBOutlet weak var eventThing: UILabel!
-    
-    
+    @IBOutlet weak var eventDate: UILabel!
+    @IBOutlet weak var eventLocation: UILabel!
     
 }
