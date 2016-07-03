@@ -18,12 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-YI-GqQ">
-                                <rect key="frame" x="222" y="204" width="156" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LogoVibeTest" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-YI-GqQ">
+                                <rect key="frame" x="167" y="190" width="266" height="219"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-QI-N1O">
+                                <rect key="frame" x="183" y="454" width="234" height="30"/>
+                                <state key="normal" title="SIGN UP WITH FACEBOOK"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azV-gx-dUe">
+                                <rect key="frame" x="183" y="502" width="234" height="30"/>
+                                <state key="normal" title="LOG IN"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wbw-QI-N1O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XHg-wJ-ffx"/>
                             <constraint firstItem="nAt-YI-GqQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMj-Bq-Naq"/>
                             <constraint firstItem="nAt-YI-GqQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tUw-R2-YFo"/>
                         </constraints>
@@ -107,4 +116,7 @@
             <point key="canvasLocation" x="1161" y="374"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LogoVibeTest" width="558" height="610"/>
+    </resources>
 </document>

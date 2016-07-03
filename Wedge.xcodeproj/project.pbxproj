@@ -480,6 +480,7 @@
 				EBF604431D297E7800F43072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBF604441D297E7800F43072 /* Build configuration list for PBXNativeTarget "WedgeTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +489,7 @@
 				EBF604461D297E7800F43072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBF604471D297E7800F43072 /* Build configuration list for PBXNativeTarget "WedgeUITests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +498,7 @@
 				EBF604491D297E7800F43072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
