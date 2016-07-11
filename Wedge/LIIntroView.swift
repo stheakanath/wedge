@@ -24,8 +24,9 @@ class LIIntroView: UIViewController {
                 } else if(fbloginresult.grantedPermissions.contains("email")) {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewControllerWithIdentifier("mm") as! NewsfeedViewController
+                    let t = UINavigationController(rootViewController: vc)
 
-                    self.presentViewController(vc, animated: true, completion: nil)
+                    self.presentViewController(t, animated: true, completion: nil)
                 }
             }
         })

@@ -48,5 +48,19 @@ class NewsfeedViewController: UITableViewController {
         cell.eventDate.text = self.data[indexPath.row]["dates"]["start"]["localDate"].stringValue
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! FeedItem
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("detailed") as! TicketViewController
+        let _ = vc.view
+        vc.title = cell.eventName.text
+        vc.eventPicture.image = cell.eventPicture.image
+        vc.eventName.text = cell.eventName.text
+        vc.eventDate.text = cell.eventDate.text
+        vc.eventLocation.text = cell.eventLocation.text
+        self.navigationController?.pushViewController(vc, animated: true)
+
+    }
 
 }
