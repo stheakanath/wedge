@@ -6,6 +6,8 @@
 //  Copyright © 2016 Kuriakose Sony Theakanath. All rights reserved.
 //
 
+// Test Merge
+
 import UIKit
 
 class NewsfeedViewController: UITableViewController {
