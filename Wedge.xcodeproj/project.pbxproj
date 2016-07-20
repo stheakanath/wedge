@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D2D38AE1D3DC9E700909689 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0D2D38AD1D3DC9E700909689 /* .gitignore */; };
+		0D6E0B2A1D3F103B00FCA9DC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E0B291D3F103B00FCA9DC /* ProfileViewController.swift */; };
 		0DB244B11D29B8190059C96F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */; };
 		0DB244B21D29B8190059C96F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */; };
 		0DB244B31D29B8190059C96F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		0D2D38AD1D3DC9E700909689 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0D6E0B291D3F103B00FCA9DC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../Frameworks/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				EBF6044C1D297E9800F43072 /* FeedItem.swift */,
 				EB58252D1D298C5D00BCEFD6 /* Request.swift */,
 				EBF6044A1D297E8800F43072 /* Main.storyboard */,
+				0D6E0B291D3F103B00FCA9DC /* ProfileViewController.swift */,
 				EBF604231D297E7800F43072 /* Assets.xcassets */,
 				EBF604251D297E7800F43072 /* LaunchScreen.storyboard */,
 				EBF604281D297E7800F43072 /* Info.plist */,
@@ -309,6 +312,7 @@
 			files = (
 				EBF6041F1D297E7800F43072 /* LIIntroView.swift in Sources */,
 				EB5825271D29827400BCEFD6 /* NFData.swift in Sources */,
+				0D6E0B2A1D3F103B00FCA9DC /* ProfileViewController.swift in Sources */,
 				EBF6041D1D297E7800F43072 /* AppDelegate.swift in Sources */,
 				EB58252B1D2984C800BCEFD6 /* SwiftyJSON.swift in Sources */,
 				EB58252E1D298C5D00BCEFD6 /* Request.swift in Sources */,
