@@ -17,6 +17,10 @@ class NewsfeedViewController: UITableViewController {
         self.data = JSON(data: Request().getNewsfeed())["results"]
     }
     
+    override func viewDidLoad() {
+        self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
