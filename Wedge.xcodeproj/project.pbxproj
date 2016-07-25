@@ -13,6 +13,7 @@
 		0DB244B41D29B8190059C96F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */; };
 		374B4C871D3426E0001C352D /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B4C861D3426E0001C352D /* TicketViewController.swift */; };
 		376373231D34367F00C8DAD1 /* TicketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376373221D34367F00C8DAD1 /* TicketPriceCell.swift */; };
+		37EB3BDA1D468833000014EF /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB3BD91D468833000014EF /* SpotifyLoginViewController.swift */; };
 		EB5825251D2981D900BCEFD6 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */; };
 		EB5825271D29827400BCEFD6 /* NFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825261D29827400BCEFD6 /* NFData.swift */; };
 		EB58252B1D2984C800BCEFD6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */; };
@@ -51,6 +52,7 @@
 		0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		374B4C861D3426E0001C352D /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		376373221D34367F00C8DAD1 /* TicketPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketPriceCell.swift; sourceTree = "<group>"; };
+		37EB3BD91D468833000014EF /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
 		EB5825261D29827400BCEFD6 /* NFData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFData.swift; sourceTree = "<group>"; };
 		EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				EBF6041E1D297E7800F43072 /* LIIntroView.swift */,
 				EB5825261D29827400BCEFD6 /* NFData.swift */,
 				EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */,
+				37EB3BD91D468833000014EF /* SpotifyLoginViewController.swift */,
 				374B4C861D3426E0001C352D /* TicketViewController.swift */,
 				376373221D34367F00C8DAD1 /* TicketPriceCell.swift */,
 				EBF6044C1D297E9800F43072 /* FeedItem.swift */,
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EB3BDA1D468833000014EF /* SpotifyLoginViewController.swift in Sources */,
 				EBF6041F1D297E7800F43072 /* LIIntroView.swift in Sources */,
 				EB5825271D29827400BCEFD6 /* NFData.swift in Sources */,
 				EBF6041D1D297E7800F43072 /* AppDelegate.swift in Sources */,
