@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2D38AE1D3DC9E700909689 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0D2D38AD1D3DC9E700909689 /* .gitignore */; };
 		0DB244B11D29B8190059C96F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */; };
 		0DB244B21D29B8190059C96F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */; };
 		0DB244B31D29B8190059C96F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2D38AD1D3DC9E700909689 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0DB244AD1D29B8190059C96F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		0DB244AE1D29B8190059C96F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../Frameworks/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		0DB244AF1D29B8190059C96F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				EBF604231D297E7800F43072 /* Assets.xcassets */,
 				EBF604251D297E7800F43072 /* LaunchScreen.storyboard */,
 				EBF604281D297E7800F43072 /* Info.plist */,
+				0D2D38AD1D3DC9E700909689 /* .gitignore */,
 			);
 			path = Wedge;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2D38AE1D3DC9E700909689 /* .gitignore in Resources */,
 				EBF604271D297E7800F43072 /* LaunchScreen.storyboard in Resources */,
 				EBF604241D297E7800F43072 /* Assets.xcassets in Resources */,
 				EBF6044B1D297E8800F43072 /* Main.storyboard in Resources */,
