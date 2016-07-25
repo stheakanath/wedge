@@ -49,7 +49,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="573"/>
+            <point key="canvasLocation" x="-212" y="508"/>
+        </scene>
+        <!--Spotify Login View Controller-->
+        <scene sceneID="mBX-g0-SNh">
+            <objects>
+                <viewController id="gO5-bF-o0T" customClass="SpotifyLoginViewController" customModule="Wedge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WPW-TT-k3M"/>
+                        <viewControllerLayoutGuide type="bottom" id="JdX-FG-B3s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6uh-wl-B2s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPR-Zt-24J">
+                                <rect key="frame" x="277" y="293" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9a-UT-5lp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="508"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xLP-xf-8KP">

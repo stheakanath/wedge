@@ -14,7 +14,11 @@
 		0DB244B41D29B8190059C96F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */; };
 		374B4C871D3426E0001C352D /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B4C861D3426E0001C352D /* TicketViewController.swift */; };
 		376373231D34367F00C8DAD1 /* TicketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376373221D34367F00C8DAD1 /* TicketPriceCell.swift */; };
+		3769A2CA1D46B0F000995733 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3769A2C91D46B0F000995733 /* CoreLocation.framework */; };
 		37EB3BDA1D468833000014EF /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB3BD91D468833000014EF /* SpotifyLoginViewController.swift */; };
+		37EB3BDC1D468AB7000014EF /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EB3BDB1D468AB7000014EF /* Spotify.framework */; };
+		37EB3BDE1D468B3D000014EF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EB3BDD1D468B3D000014EF /* AVFoundation.framework */; };
+		37EB3BE01D468B50000014EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EB3BDF1D468B50000014EF /* SystemConfiguration.framework */; };
 		EB5825251D2981D900BCEFD6 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */; };
 		EB5825271D29827400BCEFD6 /* NFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5825261D29827400BCEFD6 /* NFData.swift */; };
 		EB58252B1D2984C800BCEFD6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */; };
@@ -54,7 +58,11 @@
 		0DB244B01D29B8190059C96F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		374B4C861D3426E0001C352D /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		376373221D34367F00C8DAD1 /* TicketPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketPriceCell.swift; sourceTree = "<group>"; };
+		3769A2C91D46B0F000995733 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		37EB3BD91D468833000014EF /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
+		37EB3BDB1D468AB7000014EF /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		37EB3BDD1D468B3D000014EF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37EB3BDF1D468B50000014EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EB5825241D2981D900BCEFD6 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
 		EB5825261D29827400BCEFD6 /* NFData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFData.swift; sourceTree = "<group>"; };
 		EB58252A1D2984C800BCEFD6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -81,9 +89,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3769A2CA1D46B0F000995733 /* CoreLocation.framework in Frameworks */,
+				37EB3BE01D468B50000014EF /* SystemConfiguration.framework in Frameworks */,
+				37EB3BDE1D468B3D000014EF /* AVFoundation.framework in Frameworks */,
 				0DB244B21D29B8190059C96F /* FBSDKMessengerShareKit.framework in Frameworks */,
 				0DB244B41D29B8190059C96F /* FBSDKCoreKit.framework in Frameworks */,
 				0DB244B11D29B8190059C96F /* FBSDKShareKit.framework in Frameworks */,
+				37EB3BDC1D468AB7000014EF /* Spotify.framework in Frameworks */,
 				0DB244B31D29B8190059C96F /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +132,9 @@
 		EBF604101D297E7800F43072 = {
 			isa = PBXGroup;
 			children = (
+				3769A2C91D46B0F000995733 /* CoreLocation.framework */,
+				37EB3BDF1D468B50000014EF /* SystemConfiguration.framework */,
+				37EB3BDD1D468B3D000014EF /* AVFoundation.framework */,
 				EBF6041B1D297E7800F43072 /* Wedge */,
 				EBF604301D297E7800F43072 /* WedgeTests */,
 				EBF6043B1D297E7800F43072 /* WedgeUITests */,
@@ -154,6 +169,7 @@
 				EBF6044A1D297E8800F43072 /* Main.storyboard */,
 				EBF604231D297E7800F43072 /* Assets.xcassets */,
 				EBF604251D297E7800F43072 /* LaunchScreen.storyboard */,
+				37EB3BDB1D468AB7000014EF /* Spotify.framework */,
 				EBF604281D297E7800F43072 /* Info.plist */,
 				0D2D38AD1D3DC9E700909689 /* .gitignore */,
 			);
@@ -186,8 +202,8 @@
 			buildConfigurationList = EBF604411D297E7800F43072 /* Build configuration list for PBXNativeTarget "Wedge" */;
 			buildPhases = (
 				EBF604151D297E7800F43072 /* Sources */,
-				EBF604161D297E7800F43072 /* Frameworks */,
 				EBF604171D297E7800F43072 /* Resources */,
+				EBF604161D297E7800F43072 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -458,9 +474,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Wedge",
 				);
 				INFOPLIST_FILE = Wedge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.Wedge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Wedge/Wedge-Bridging-Header.h";
@@ -474,9 +492,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Wedge",
 				);
 				INFOPLIST_FILE = Wedge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonytheakanath.Wedge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Wedge/Wedge-Bridging-Header.h";

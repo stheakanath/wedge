@@ -7,14 +7,40 @@
 //
 
 import UIKit
+import CoreLocation
 
-class NewsfeedViewController: UITableViewController {
+class NewsfeedViewController: UITableViewController, CLLocationManagerDelegate {
     var data : JSON = []
     var imageData = [UIImage?](count: 20, repeatedValue: nil)
+    var locationManager = CLLocationManager()
     
     override func viewWillAppear(animated: Bool) {
         print("hello")
-        self.data = JSON(data: Request().getNewsfeed())["results"]
+//
+//        let long = userLocation.coordinate.longitude;
+//        let lat = userLocation.coordinate.latitude;
+//
+
+      //  self.data = JSON(data: Request().getNewsfeed())["results"]
+        self.data = []
+    }
+    
+    override func viewDidLoad() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+
+    }
+    
+     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        var userLocation:CLLocation = locations[0] as! CLLocation
+        let long = userLocation.coordinate.longitude;
+        let lat = userLocation.coordinate.latitude;
+        print(long)
+        print(lat)
+        //Do What ever you want with it
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
